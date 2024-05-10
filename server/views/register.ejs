@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/register.css">
+    
+</head>
+<body>
+  <%- include('partials/messages', { success_msg: success_msg }) %>
+    <div class="wrapper">
+      <form action="/users/register" method="POST" class="register-form">
+          <div class="login-text">
+            <div class="text">
+              <a href="#">You are already done!</a>
+              <div class="input-container">
+
+                <input type="name"
+                placeholder="Full Name"
+                name="name"
+                value="<%= typeof name != 'undefined' ? name : '' %>" style="margin-top: 0px;" class="user-input"
+                 />
+
+                 <input type="phone"
+                 name="phone" 
+                 placeholder="Phone Number" 
+                 value="<%= typeof phone != 'undefined' ? phone : '' %>" class="phone-input"
+                 />
+                 <input type="email" 
+                 name="email"
+                 placeholder="E-mail" 
+                 value="<%= typeof email != 'undefined' ? email : '' %>" class="mail-input"
+                 />
+
+                <input type="city" 
+                name="city"
+                placeholder="City" 
+                value="<%= typeof city != 'undefined' ? city : '' %>" class="map-input"
+
+                />
+                <input type="urc" 
+                name="urc"
+                 placeholder="Age"
+                 value="<%= typeof urc != 'undefined' ? urc : '' %>" class="urc-input"
+
+                 />
+                <input type="company"
+                name="company"
+                placeholder="Address"
+                value="<%= typeof company != 'undefined' ? company : '' %>" class="company-input"
+                 />
+    
+                <input type="password"
+                name="password"
+                placeholder="Password"
+                value="<%= typeof password != 'undefined' ? password : '' %>" class="password-input"
+                />
+
+                <input type="password" 
+                placeholder="Confirm Password"
+                name="password2"
+                value="<%= typeof password2 != 'undefined' ? password2 : '' %>" class="password-input"
+                />
+              </div>
+              
+              <button type="submit" class="register-btn">Register</button>
+            </div>
+          </div>
+        </form>
+        <div class="call-text">
+          <h1>Already have an account? <span>Login now!</span></h1>
+          <a href ="/users/login" class="call-to-action" >Login</a>
+          <img src="\pictures\logoSVG.png"  width="100" height="20">
+        </div>
+      </div>
+</body>
+</html>

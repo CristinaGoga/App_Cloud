@@ -1,0 +1,24 @@
+<% if(typeof errors != 'undefined' && errors.length > 0) { %>
+  <script>
+    var errorPopup = document.createElement("div");
+    errorPopup.style.position = "fixed";
+    errorPopup.style.top = "10px";
+    errorPopup.style.right = "10px";
+    errorPopup.style.backgroundColor = "red";
+    errorPopup.style.color = "white";
+    errorPopup.style.opacity = "0.5";
+    errorPopup.style.transition = "opacity 0.5s ease-in-out";
+    errorPopup.style.padding = "10px";
+    errorPopup.style.borderRadius = "5px";
+    errorPopup.innerText = "<%= errors[0].msg %>";
+    document.body.appendChild(errorPopup);
+
+    setTimeout(function() {
+      document.body.removeChild(errorPopup);
+    }, 5000);
+  </script>
+  <% } %>
+<% if(success_msg!=''){ %>
+    <%= success_msg  %>
+<% } %>
+

@@ -1,0 +1,200 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-image: url("/pictures/backGroundAbout.png");
+
+}
+.wrapper {
+    width: 800px;
+    height: 550px;
+    position: relative;
+    margin: 3% auto;
+    box-shadow: 2px 18px 70px 0px #9D9D9D;
+    overflow: hidden;
+}
+
+.login-text {
+    width: 800px;
+    height:450px;
+    background: linear-gradient(to left, #fff, #6f42c1); 
+    position: absolute;
+    top: -300px;
+    box-sizing: border-box;
+    padding: 6%;
+    transition: all 0.5s ease-in-out;
+    z-index: 11;
+}
+
+.text {
+    margin-left: 20px;
+    color: #fff;
+    display: none;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.3s;
+}
+.text a, a:visited {
+        font-size: 36px;
+        color: #fff;
+        text-decoration: none;  
+        font-weight: bold;
+        display: block;
+}
+
+.text hr {
+        width: 10%;
+        float: left;
+        background-color: #fff;
+        font-size: 16px;
+}
+
+.text input {
+        margin-top: 30px;
+        height: 40px;
+        width: 300px;
+        border-radius: 2px;
+        border: none;
+        background-color: #444;
+        opacity: 0.6;
+        outline: none;
+        color: #fff;
+        padding-left: 10px;
+ }
+
+   .text input[type=text] {
+        margin-top: 60px;
+    }
+
+   /* Button styles */
+.text button,
+.button-container a {
+  font-family: 'Raleway', sans-serif;
+  display: inline-block;
+  text-align: center;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.text button {
+  margin-top: 60px;
+  width: 140px;
+  background-color: #fff;
+  color: #696a86;
+  font-weight: bold;
+}
+  
+  .button-container .login-btn {
+    background-color: #fff;
+    transition: all  0.3s ease-in-out;
+  }
+  
+  .button-container .login-btn:hover {
+    background-color: #1A0738;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  }
+
+  .button-container .signup-btn {
+    background-color: #fff;
+    transition: all  0.3s ease-in-out;
+  }
+  
+  .button-container .signup-btn:hover {
+    background-color: #1A0738;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  }
+  
+  .cta {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #fff;
+    background-image: url("/pictures/login1.png");
+    background-size: cover;
+    border: 7px solid #fff;
+    position: absolute;
+    bottom: -30px;
+    left: 370px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    z-index: 11;
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+    animation: pulse 2s ease-in-out infinite alternate;
+  }
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1) translateY(0);
+    }
+    100% {
+        transform: scale(1.1) translateY(-5px);
+    }
+}
+
+.stop-animation {
+    animation-name: none;
+    transition: none;
+  }
+.call-text {
+    background-color: #fff;
+    width: 800px;
+    height: 450px;
+    position: absolute;
+    bottom: 0;
+    padding: 10%;
+    box-sizing: border-box;
+    text-align: center;
+}
+    .call-text h1 {
+        font-size: 42px;
+        margin-top: 10%;
+        color: #696a86;
+    }
+    .call-text  span {
+            color: #1A0738;
+            font-weight: bolder;
+            
+        }
+
+   .call-text button {
+        height: 40px;
+        width: 180px;
+        border: none;
+        border-radius: 20px;
+        background: linear-gradient(to left, #d5b7f5, #6f42c1); 
+        color: #fff;
+        font-weight: bolder;
+        margin-top: 30px;
+        cursor: pointer;
+        outline: none;
+        transition: all 0.3s ease-in-out;
+    }
+    .call-text button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    }
+
+.show-hide {
+    display: block;
+}
+
+ .expand {
+    transform: translateY(300px);
+}
+
+.success-message {
+    background-color: #a2d9ce;
+    color: #333;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  

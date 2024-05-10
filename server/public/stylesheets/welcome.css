@@ -1,0 +1,234 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+* {
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    margin: 0;
+    
+  }
+  
+  header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 1200px;
+    justify-content: space-between;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  
+  nav a {
+    
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #6e529b;
+  }
+  
+  a img {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  a img:hover {
+    transform: scale(1.1);
+  }
+  
+  main {
+    margin-top: 80px;
+    align-items: center;
+  }
+  
+  .hero {
+    background-image: url("/pictures/backGround2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    padding: 3rem;
+    
+  }
+  
+  
+  h1 {
+  
+    font-family: 'Montserrat', sans-serif;
+    color: #1a0738;
+    font-style: bold;
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 64px;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
+  }
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    max-width: 550px;
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 16px;
+    margin-left: 1.3cm;
+    margin-top: -40px;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 5s;
+    /* animation-delay: 1s; */
+    animation-fill-mode: forwards;
+   
+    
+}
+  .button {
+    
+    appearance: none;
+    background-color: #FFFFFF;
+    border-width: 0;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1em;
+    margin: 0;
+    opacity: 1;
+    outline: 0;
+    padding: 1em 2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-rendering: geometricprecision;
+    text-transform: uppercase;
+    transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+    margin-left: -3cm;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  .button:before {
+    animation: opacityFallbackOut .5s step-end forwards;
+    backface-visibility: hidden;
+    background-color: #EBEBEB;
+    clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateZ(0);
+    transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+    width: 100%;
+  }
+  
+  .button:hover:before {
+    animation: opacityFallbackIn 0s step-start forwards;
+    clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  }
+  
+  .button:after {
+    background-color: #FFFFFF;
+  }
+  
+  .button span {
+    z-index: 1;
+    position: relative;
+   
+  }
+  
+  header {
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  section#about {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    text-align: justify;
+  }
+  
+  
+  /* Add a smooth scrolling effect to the page */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  
+  
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+  }

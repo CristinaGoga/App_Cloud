@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/login.css">
+</head>
+<body>
+   
+    <div class="wrapper">
+        <div class="login-text">
+            <button class="cta"><i class="fas fa-chevron-down fa-1x"></i></button>
+            <div class="text">
+                <img src="\pictures\logoSVG.png" width="100" height="20" style="margin-left: 15cm;">
+                <a href="">Login</a>
+                <hr>
+                <br>
+                <form action="/users/login" method="POST" class="login-form">
+                    <input type="email" id="email" name="email" placeholder="E-mail" required />
+                    <br>
+                    <input type="password" id="password" name="password" placeholder="Password" required />
+                    <br>
+
+                    <div class="button-container">
+                        <button type="submit" class="login-btn">Log In</button>
+                        <a href="/users/register"><button class="signup-btn">Sign Up</button></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="call-text">
+            <% if (success_msg) { %>
+                <div class="alert-success">
+                    <%= success_msg %>
+                </div>
+                <script>
+                    setTimeout(function () {
+                        document.querySelector('.alert-success').remove();
+                    }, 2000);
+                </script>
+            <% } %>
+            <h1>Take control of your finances with <span>BudgetEasy</span></h1>
+            <a href="/users/register"><button>Join the Community</button></a>
+        </div>
+    </div>  
+</body>
+<script>
+    var cta = document.querySelector(".cta");
+    var check = 0;
+     cta.addEventListener('click', function(e){
+    var text = e.target.nextElementSibling;
+    var loginText = e.target.parentElement;
+    text.classList.toggle('show-hide');
+    loginText.classList.toggle('expand');
+    if(check == 0)
+    {
+        cta.innerHTML = "<i class=\"fas fa-chevron-up\"></i>";
+        check++;
+    }
+    else
+    {
+        cta.innerHTML = "<i class=\"fas fa-chevron-down\"></i>";
+        check = 0;
+    }
+})
+   //Butonul de log in sa se opreasca din animatie dupa ce e apasat
+   const ctaButton = document.querySelector('.cta');
+   ctaButton.addEventListener('click', () => {
+       ctaButton.classList.add('stop-animation');
+   });
+</script>
+</html>

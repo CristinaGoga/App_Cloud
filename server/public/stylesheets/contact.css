@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+body {
+  margin: 0;
+  background-image: url("/pictures/backGroundAbout.png");
+
+}
+#contact {
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  float: left;
+  width: 60%;
+}
+
+
+
+#contact h10 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #1a0738;
+  font-size: 2.3em;
+  margin-top: 55px;
+ margin-bottom: 40px;
+}
+
+/* Style for Contact form input fields */
+#contact input[type=text],
+#contact input[type=email],
+#contact input[type=phone] {
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  background: transparent;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  resize: none;
+  font-size: 16px;
+  outline: none;
+}
+form#contact-form{
+  height: 60vh;
+}
+
+#contact textarea {
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  background: transparent;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  resize: none;
+  font-size: 16px;
+  outline: none;
+}
+
+#contact input[type=text]:last-of-type,
+#contact input[type=email]:last-of-type,
+#contact input[type=phone]:last-of-type,
+#contact textarea:last-of-type {
+  margin-bottom: 0;
+}
+
+.button-48 {
+  margin-top: 10px;
+  appearance: none;
+  background-color: #FFFFFF;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+ font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+ 
+  opacity: 1;
+  outline: 0;
+  padding: 0.7em 6em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-48:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #EBEBEB;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+.button-48:hover:before {
+    animation: opacityFallbackIn 0s step-start forwards;
+    clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  }
+  
+  .button-48:after {
+    background-color: #FFFFFF;
+  }
+  .button-48 span {
+    z-index: 1;
+    position: relative;
+   
+  }
+
+  
+  
+
+  
