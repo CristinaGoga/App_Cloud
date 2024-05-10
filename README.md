@@ -58,6 +58,8 @@ DELETE: Pentru a șterge resurse existente
 5. Capturi de ecran
 
 
+![Captură ecran (709)](https://github.com/CristinaGoga/App_Cloud/assets/116006449/6c56c112-2136-4b13-a324-68a03c868221)
+
 
 
 
