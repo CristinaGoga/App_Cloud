@@ -63,5 +63,11 @@ DELETE: Pentru a șterge resurse existente
 
 
 
-
+Vercel:
 https://app-cloud-seven.vercel.app/
+
+YouTube Prezentare:
+https://youtu.be/lZTBmvT520Y
+
+GitHub Repository:
+https://github.com/CristinaGoga/App_Cloud
