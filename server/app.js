@@ -9,12 +9,22 @@ const dotenv = require('dotenv');
 const path = require('path');
 const cors = require('cors');
 
+
+
 dotenv.config({ path: './config/.env' });
 
 require('./config/passport')(passport);
 
 const app = express();
-app.use(cors());
+
+
+app.use(cors({
+  origin: ["//websote"],
+  methods: ["POST", "GET", "PUT", "DELETE"], // Include all allowed HTTP methods
+  credentials: true
+}));
+
+
 app.use(express.json());
 
 const indexRouter = require('./routes/index');
