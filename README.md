@@ -1,5 +1,5 @@
 # nextApp
-# nextApp
+# Financial App
 
 Proiect Cloud Computing Goga Cristina Maria
 
